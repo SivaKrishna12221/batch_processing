@@ -1,0 +1,9 @@
+spring:
+ batch:
+  job:
+   enabled: false#indicates the batch code should execute on app startup or on demand 
+             #default true means on the app startup
+             # false means launcher.run() method 
+    
+  jdbc:
+   initialize-schema: always
