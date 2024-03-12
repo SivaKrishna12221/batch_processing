@@ -1,0 +1,20 @@
+
+spring:
+ batch:
+  job:
+   enabled: true
+  jdbc:
+   initialize-schema: ALWAYS
+ data:
+  mongodb:
+  uri: mongodb://stuart:stuartdto@localhost:27017/springBatch?authSource=admin
+ # uri: mongodb://user:siva@localhost/test?authSource=admin
+ #  uri: mongodb+srv://siva:siva@localhost.mongodb.net/
+#   host: localhost
+#   port: 27017
+#authentication-database: springBatch
+ #database: springBatch
+#   username: siva
+#   password: siva
+#   #authentication-database: siva
+#spring.data.mongodb.uri=mongodb://user:passwod@localhost/test?authSource=admin

@@ -1,0 +1,13 @@
+
+spring:
+ batch:
+  job:
+   enabled: false #Enabling job on demand .no it will excecute 
+  jdbc:
+   initialize-shcema: always #it will creates some tables
+
+ datasource:
+  driver-class-name: oracle.jdbc.driver.OracleDriver
+  url: jdbc:oracle:thin:@localhost:1521:orcl
+  username: siva
+  password: velpula

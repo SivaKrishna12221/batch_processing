@@ -47,7 +47,6 @@ public class CsvEmployeeFileProcessing {
 		FlatFileItemReader<Employee> itemReader = new FlatFileItemReader<Employee>();
 		itemReader.setResource(new ClassPathResource("MOCK_DATA.csv"));
 		DefaultLineMapper<Employee> deflineMapper = new DefaultLineMapper<Employee>();
-
 		DelimitedLineTokenizer delLineTokanizer = new DelimitedLineTokenizer();
 		delLineTokanizer.setDelimiter(",");
 		delLineTokanizer.setNames("empno", "name", "salary", "address");
